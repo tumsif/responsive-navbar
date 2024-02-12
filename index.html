@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Nav bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="sidebar hideOnLargeScreen">
+          <li class="nav-item" onclick="closeSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="#ffa500"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </li>
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Services</a></li>
+          <li class="nav-item"><a href="#">Forum</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+          <li class="nav-item"><a href="#">Login</a></li>
+        </ul>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="logo" href="#">LOGO</a></li>
+          <li class="nav-item hideOnMobile"><a href="#">Home</a></li>
+          <li class="nav-item hideOnMobile"><a href="#">About</a></li>
+          <li class="nav-item hideOnMobile"><a href="#">Services</a></li>
+          <li class="nav-item hideOnMobile"><a href="#">Forum</a></li>
+          <li class="nav-item hideOnMobile"><a href="#">Contact</a></li>
+          <li class="nav-item hideOnMobile"><a href="#">Login</a></li>
+          <li class="nav-item hideOnLargeScreen" onclick="showSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="#ffa500"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>
